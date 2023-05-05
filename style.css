@@ -1,0 +1,13 @@
+*{
+    background-color:#210E09 ;
+}
+
+.layout {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+
+.main-menu {}
