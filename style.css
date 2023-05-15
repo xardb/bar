@@ -2,12 +2,17 @@
     background-color:#210E09 ;
 }
 
-.layout {
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+.menu-items {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
 }
-
-
-
-.main-menu {}
+    
+.menu-logo {
+    text-align: right;
+}
+.layout {
+    padding: 20px;
+}
