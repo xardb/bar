@@ -1,5 +1,248 @@
-.first-screen {
+@font-face {
+    font-family: 'GothamProBold';
+    src: url(./fonts/gothampro_bold.ttf);
+}
+
+@font-face {
+    font-family: 'Stolz';
+    src: url(./fonts/stolzl_regular.otf);
+}
+
+@font-face {
+    font-family: 'GothamProBlack';
+    src: url(./fonts/gothampro_black.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px 7px;
+    gap: 10px;
+}
+.first-screen-img {
     background-image: url(images/firstimg.png);
     background-size: cover;
-    height: 110vh
+    width: 70%;
+    border-radius: 5px;
+    align-items: flex-start;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 45px 60px;
 }
+
+.announcements {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 39px 26px;
+    gap: 15px;
+    background-color: #D5621D5f;
+    justify-content: space-between;
+    
+}
+
+.first-screen {
+    display: flex;
+    gap: 20px;
+    max-height: 100vh;
+    padding-bottom: 143px;
+}
+
+.announcement-item {
+    width: 45%;
+    height: 30vh;
+    background-size: cover;
+    display: flex;
+    
+}
+
+.nav-link {
+    background-color: #D5621D;
+}
+
+section {
+    padding: 0 2%;
+    background-color: #210E09;
+}
+
+.anonc {
+    width: 30%;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: #210E09;
+    padding: 49px 2% 34px;
+    align-items: center;
+}
+
+.menu-items {
+    display: flex;
+    gap: 30px;
+    font-size: 14px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    font-family: 'Stolz';
+    font-weight: 400;
+    color: white;
+}
+
+
+.menu-button {
+    border: 2px solid #D5621D;
+    border-radius: 5px;
+    padding: 15px 30px;
+    background: none;
+    color: white;
+    font-weight: 400;
+    font-family: 'Stolz';
+}
+
+.since {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px 7px;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: #210E09;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+
+.TFU {
+    font-size: 40px;
+    font-family: 'GothamProBlack';
+    font-style: normal;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 150%;
+    letter-spacing: 0.05em;
+
+}
+
+.anonc .nav-tabs .nav-link.active, .anonc .nav-tabs .nav-link {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px 10px 7px;
+    border-radius: 5px 5px 0px 0px;
+    color: white;
+    border: none;
+    background-color: rgba(213, 98, 29, 0.05);
+    font-family: 'GothamProBold';
+    font-weight: 700;
+}
+
+.anonc .nav-tabs .nav-link.active {
+    background-color: #D5621D5f;
+    margin-bottom: 0;
+}
+
+.anonc .nav-tabs {
+    border: none;
+}
+
+.anonc .nav-item {
+    width: 50%;
+}
+
+.lead {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 20px 7px;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    color: #210E09;
+    line-height: 150%;
+    width: 350px;
+    font-family: 'GothamProBold';
+    font-style: normal;
+    text-align: center;
+    margin: 0 auto 40px;
+
+}
+
+.kitchen {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    line-height: 150%;
+
+}
+
+.product-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D5621D;
+    border-radius: 5px;
+    padding: 10px 20px 7px;
+    gap: 10px;
+    background: none;
+    color: white;
+    align-items: center;
+    width: 84px;
+    height: 38px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.disc {
+    font-family: 'Stolz';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: white;
+}
+
+.product-name {
+    font-family: 'Stolz';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: white;
+
+}
+
+.all-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 30px;
+    gap: 10px;
+    background-color: #D5621D;
+    border-radius: 5px;
+    width: 171px;
+    height: 57px;
+    color: white;
+    font-family: 'GothamProBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+
+}
+
+/* слишко много всего бесполезного написано, ничего не понятно */
