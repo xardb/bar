@@ -12,14 +12,21 @@
     font-family: 'GothamProBlack';
     src: url(./fonts/gothampro_black.ttf);
 }
+
+
 * {
     padding: 0;
     margin: 0;
 }
-
-section {
-    overflow: hidden;
+#carouselExample-mobile {
+    display: none;
 }
+section, footer {
+    overflow: hidden;
+    padding: 0 5%;
+    background-color: #210E09;
+}
+
 
 .layout {
     display: flex;
@@ -70,10 +77,6 @@ section {
     background-color: #D5621D;
 }
 
-section {
-    padding: 0 2%;
-    background-color: #210E09;
-}
 
 .anonc {
     width: 30%;
@@ -83,7 +86,7 @@ section {
     display: flex;
     justify-content: space-between;
     background-color: #210E09;
-    padding: 49px 2% 34px;
+    padding: 49px 5% 34px;
     align-items: center;
 }
 
@@ -297,6 +300,9 @@ section {
 }
 
 .events-left-lead {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
     background-color: white;
     border-radius: 5px;
@@ -380,7 +386,7 @@ section {
     left: -75px;
 }
 
-.rider {
+.rider, .afisha {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -388,7 +394,6 @@ section {
 }
 
 .rider-lead {
-    align-items: center;
     background-color: white;
     border-radius: 5px;
     padding: 10px 20px 7px;
@@ -400,9 +405,10 @@ section {
     text-transform: uppercase; 
 }
 
-.rider-h2 {
+.rider > h2, .afisha > h2 {
     text-align: center;
     padding-bottom: 80px;
+    color: white;
 }
 
 .accordion {
@@ -447,23 +453,32 @@ section {
 
 .rider-accordion-sound {
     display: flex;
-    align-items: center;
     justify-content: center;
 }
 
-.rider-right h2 {
+.rider-right-h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+
+    font-family: 'GothamProBlack';
+    font-weight: 400;
+    font-size: 32px;
+
+}
+
+.rider-right-socials {
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    gap: 25px;
 
-    margin-bottom: 20px;
 }
 
-
-.rider-right-socials img {
+.rider-right-socials a img {
     border: 2px solid #D5621D;
     border-radius: 5px;
     padding: 10px;
-    gap: 10px;
     width: 40px;
     height: 40px;
 }
@@ -473,11 +488,271 @@ section {
     flex-direction: row;
 }
 .rider-right {
-    display: flex;
+    gap: 30px;
     
 }
 
 .rider-right-izo {
     display: flex;
     flex-direction: column;
+    gap: 30px;
 }
+
+
+.rider-right-izo span {
+    text-align: center;
+    font-family: 'GothamProBold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+
+
+.rider-right-list {
+    display: flex;
+    gap: 24px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    padding-top: 116px;
+    padding-bottom: 100px;
+}
+.contacts h2 {
+    text-align: center;
+    color: white;
+}   
+
+.contacts-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts-main-info {
+    background-color: rgba(213, 98, 29, 0.1);
+    border: 2px solid #D5621D;
+    border-radius: 5px;
+    width: 30%;
+    color: white;
+    padding: 50px;
+}
+
+.contacts-main-info h3 {
+    font-family: 'GothamProBold';
+    font-style: normal;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.contacts-main-map {
+    width: 65%;
+}
+.contacts-main-info p {
+    margin-bottom: 35px;
+}
+
+.contacts-main-info div {
+    border: 1px solid #FFFFFF;
+    margin-top: 45px;
+    margin-bottom: 45px;
+    opacity: 0.5;
+}
+
+.afisha-galery {
+    display: grid;
+    grid-template-columns:repeat(4, 1fr);
+    width: 100%;
+    gap: 24px;
+}
+
+.afisha-galery img {
+    width: 100%;
+
+}
+
+.afisha-galery-hover {
+    position: relative;
+    z-index: 10;
+}
+.afisha-galery-hover img {
+    position: relative;
+    z-index: 20;
+}
+
+.afisha-galery-text:hover {
+    opacity: 1 ;
+}
+
+.afisha-galery-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 30;
+    opacity: 0;
+    background-color: #210E09DD;
+    ;
+
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 35px;
+}
+
+.afisha-galery-text h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: 'GothamProBold';
+    font-weight: 700;
+}
+.afisha-galery-text-lead {
+    background: #D5621D;
+    border-radius: 5px;
+    gap: 8px;
+    padding: 8px 15px;
+}
+
+footer div {
+    border-top: 1px solid #ffffff79;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffffff79;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: 'Stolz';
+}
+
+@media  (max-width:450px) {
+    .menu, #carouselExample {
+        display: none;
+    }
+
+    .slider-button-right-mobile, .slider-button-left-mobile {
+        width: 50px;
+        height: 50px;
+        background-color: #D5621D;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .carousel-item-mobile :active{
+        display: none;
+    }
+    #carouselExample-mobile {
+        display: block;
+    }
+    .rider-accordion-sound {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .rider-right-list {
+        justify-content: space-around;
+        width: 371px;
+    }
+    .rider > h2 {
+        padding-bottom: 25px;
+    }
+
+    .rider-lead {
+        margin: 0 auto 18px;
+    }
+    .rider-right-socials {
+        gap: 10px;
+    }
+
+    .rider-right-izo {
+        width: 45%;
+        gap: 20px;
+    }
+
+    .accordion-item {
+        width: 371px;
+    }
+
+    .accordion {
+        width: 364px;
+        padding-bottom: 60px;
+    }
+
+    .first-screen {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 72px;
+    }
+    .anonc {
+        width: 100%;
+    }
+    .first-screen-img {
+        width: 100%;
+        height: 100vw;
+        justify-content: center;
+        align-items: center;
+        padding: 71px 7px;
+    }
+    .since {
+        border-radius: 5px;
+        padding: 5px 10px 4px;
+        font-size: 20px;
+    }
+    .TFU {
+        font-size: 34px; 
+        text-align: center; 
+    }
+    .announcement-item {
+        height: 20vh;
+    }
+
+    .carte {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .events-tourists {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 30px;
+    }
+    .events-middle-img img {
+        display: none;
+    }
+    .contacts {
+        padding-bottom: 30px;
+    }
+
+    .contacts-main {
+        flex-direction: column;
+    }
+    .contacts-main-info {
+        margin-top: 30px;
+        width: 100%
+    }
+    .contacts-main-map {
+        padding: 30px 0 10px 0;
+        width: 100%;
+        height: 400px;
+    }
+
+}
+

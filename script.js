@@ -1,24 +1,43 @@
-// // let a = 5;
-// // let b = 10;
-// // let c = 8;
+// const menu = document.querySelector(".menu-mobile")
+// const button = document.querySelector(".menu-button")
+// button.addEventListener("click", () => {
+//     menu.classList.toggle('active')
+// })
 
-// // function foo () {
-// //     const a = Number(prompt('sl1', 0));
-// //     const b = Number(prompt('sl2', 0));
-// //     if(Number.isNaN(a) && Number.isNaN(b)) {
-// //         alert('хуита');
-// //     }
-// //     else {
-// //         alert(a+b);
-// //     }
-// // }
+// const menuLinks = document.querySelectorAll(".menu-mobile-content a");
 
-// // foo()
+// menuLinks.forEach((link, index) => {
+//     link.addEventListener('click', () => {
+//         console.log('123')
+//         menuLinks.forEach(link => {
+//             link.classList.remove('active')
+//         })
+//         link.classList.add('active')
+//         menu.classList.remove('active')
+//     })
+// })
 
-// var arr = ["роутер", "палец", "мандарин", "бутылка",]
+// const menuMainLinks = document.querySelectorAll(".menu-items a")
 
-// for(let i=0; i <= 3; i=i+1) {
-//     if(i%2===0){
-//     console.log(arr[i]);
-// }
-// }
+// window.addEventListener('scroll', () => {
+//     console.log('1');
+//     let scrollDist = window.scrollY;
+//     let linksArr = document.querySelectorAll('.menu-item');
+//     let tagsArray = Array.from(document.getElementsByTagName('section'));
+//     tagsArray.forEach((el, i) => {
+//         console.log('2')
+//         if (el.offsetTop - 150 <= scrollDist) {
+//             console.log('3')
+//             linksArr.forEach(link => {
+//                 console.log('4')
+//                 if (link.classList.contains('active')) {
+//                     console.log('5')
+//                     link.classList.remove('active')
+//                 }
+//             })
+//             linksArr[i].classList.add('active')
+//         }
+           
+
+//     })
+// })
